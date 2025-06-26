@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthify – Book Now</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <header class="header">
+    <img src="logo.png" alt="Healthify Logo" class="logo" />
+    <h1>Healthify</h1>
+    <p>Your Trusted Home Testing Partner</p>
+  </header>
+
+  <section class="form-section">
+    <form id="bookingForm">
+      <input type="text" placeholder="Full Name" required />
+      <input type="number" placeholder="Age" required />
+      <select required>
+        <option value="">Sex</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+      <input type="tel" placeholder="Mobile Number" required />
+      <textarea placeholder="Full Address" required></textarea>
+      <input type="text" placeholder="Pincode" required />
+      <select id="categorySelect" onchange="updateOptions()" required>
+        <option value="">Select Category</option>
+        <option value="test">Test</option>
+        <option value="profile">Profile</option>
+      </select>
+      <select id="testSelect" required>
+        <option value="">Select Test or Profile</option>
+      </select>
+      <label>Appointment Date:</label>
+      <input type="date" required />
+      <label>Appointment Time:</label>
+      <input type="time" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <p class="whatsapp-link">
+      📲 Prefer WhatsApp? <a href="https://wa.me/919503832889" target="_blank">Book here</a>
+    </p>
+  </section>
+
+  <a href="https://wa.me/919503832889" class="floating-chat" target="_blank">
+    <img src="whatsapp-icon.png" alt="Chat" />
+  </a>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
