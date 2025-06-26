@@ -2,12 +2,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebas
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-lite.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyC07SbRJnTzAAyEIQzQhL9gyId6NNfyZCg",
+  authDomain: "healthify-otp.firebaseapp.com",
+  projectId: "healthify-otp",
+  storageBucket: "healthify-otp.appspot.com",
+  messagingSenderId: "403894737424",
+  appId: "1:403894737424:web:9ff2c41f9d3c54aef93c61"
 };
 
 const app = initializeApp(firebaseConfig);
