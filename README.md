@@ -1,0 +1,2 @@
+# healthify-static
+Static
