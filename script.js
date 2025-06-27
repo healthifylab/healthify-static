@@ -1,3 +1,0 @@
-import { db } from './firebase.js';
-import { collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-lite.js';
-document.getElementById('bookingForm').addEventListener('submit', async function(e){e.preventDefault();const name = document.querySelector('input[placeholder="Full Name"]').value;const test = Array.from(document.getElementById('testSelect').selectedOptions).map(o=>o.value);if(!name || test.length===0)return alert('Fill all');await addDoc(collection(db,'bookings'),{name,test,status:'pending'});alert('Submitted')});
