@@ -14,11 +14,9 @@ body {
   padding: 1rem 2rem;
   align-items: center;
 }
-
 .navbar img {
   height: 40px;
 }
-
 .navbar a, .nav-btn {
   color: white;
   text-decoration: none;
@@ -48,31 +46,36 @@ body {
   color: #444;
 }
 
-/* Popup styles */
+/* POPUPS */
 .popup {
   background: linear-gradient(135deg, #ff6ec4, #7873f5);
   color: white;
   padding: 1rem 1.5rem;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  z-index: 99;
+  animation: bounceIn 0.5s ease-in-out;
 }
 .popup-content {
   position: relative;
-  font-size: 1rem;
+  font-weight: bold;
 }
 .popup-content button {
   position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 1.3rem;
+  top: -5px;
+  right: -10px;
+  font-size: 1.5rem;
   color: white;
   background: none;
   border: none;
   cursor: pointer;
 }
+@keyframes bounceIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  60% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
 
-/* Card Section */
+/* PROFILE CARDS */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -80,22 +83,25 @@ body {
   gap: 1.5rem;
   padding: 2rem 1rem;
 }
-
 .card {
-  background: white;
+  background: linear-gradient(to bottom right, #fff, #f4f9ff);
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 1rem;
   width: 280px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s;
   cursor: pointer;
+  text-align: center;
 }
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 .card img {
   width: 100%;
-  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
   margin-bottom: 0.8rem;
 }
 .card h3 {
@@ -106,17 +112,16 @@ body {
   margin: 0.2rem 0;
   font-size: 0.95rem;
 }
-
 .homevisit-label {
-  background: #e0ffe0;
-  color: #2b7a2b;
+  background: #d4edda;
+  color: #155724;
   padding: 5px 10px;
-  font-weight: bold;
   border-radius: 5px;
-  margin-top: 0.5rem;
   display: inline-block;
+  margin-top: 5px;
 }
 
+/* FORM STYLING */
 form {
   max-width: 600px;
   margin: 2rem auto;
@@ -130,4 +135,45 @@ form {
 }
 input, select, textarea {
   padding: 0.9rem;
-  border:
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+form button {
+  background: #28a745;
+  color: white;
+  font-size: 1rem;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+form button:hover {
+  background: #218838;
+}
+
+/* FOOTER */
+footer {
+  background: #004aad;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+footer a {
+  color: #ffeb3b;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .popup {
+    max-width: 90% !important;
+  }
+}
