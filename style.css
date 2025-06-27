@@ -1,0 +1,112 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8faff;
+  color: #222;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #004aad;
+  color: white;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+.navbar img {
+  height: 40px;
+}
+.navbar a, .nav-btn {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-btn:hover {
+  text-decoration: underline;
+}
+.banner {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #e0f7fa, #fff4f4);
+}
+.popup {
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.popup-content {
+  position: relative;
+  font-weight: bold;
+}
+.popup-content button {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  font-size: 1.5rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+.card {
+  background: linear-gradient(to bottom right, #fff, #f4f9ff);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  cursor: pointer;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0.8rem;
+}
+.card h3 {
+  color: #004aad;
+  margin: 0.5rem 0;
+}
+.card p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+.homevisit-label {
+  background: #d4edda;
+  color: #155724;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 5px;
+}
+footer {
+  background: #004aad;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+footer a {
+  color: #ffeb3b;
+  text-decoration: none;
+  margin: 0 8px;
+}

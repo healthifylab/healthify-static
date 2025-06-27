@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthify – Book Lab Tests</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="logo.png" alt="Healthify Logo" height="40"/>
+    </div>
+    <div class="nav-right">
+      <a href="#home">Home</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button id="bookBtn" class="nav-btn">Book Now</button>
+    </div>
+  </nav>
+  <section id="home" class="banner">
+    <h1>Book Lab Tests From Home</h1>
+    <p>Trusted, Fast & Affordable Testing in Mumbai, Thane & Navi Mumbai</p>
+  </section>
+  <div class="popup" style="position: relative; margin: 20px auto; max-width: 50%; text-align: center;">
+    <div class="popup-content">
+      <strong>🎉 20% OFF + Free ECG</strong><br/>
+      On Full Body Checkup. Home Sample Collection Included!
+      <button onclick="this.parentElement.parentElement.style.display='none'">×</button>
+    </div>
+  </div>
+  <div class="popup" style="position: relative; margin: 10px auto; max-width: 40%; background: #e0ffe0; text-align: center;">
+    <div class="popup-content">
+      🏠 Home Visit Available Across Mumbai-Thane-Navi Mumbai!
+      <button onclick="this.parentElement.parentElement.style.display='none'">×</button>
+    </div>
+  </div>
+  <section id="profiles">
+    <h2>Health Packages</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="model-full-body.jpg" alt="Full Body" />
+        <h3>Full Body Checkup</h3>
+        <p>Includes CBC, LFT, KFT, Sugar, ECG</p>
+        <p><strong>₹999</strong></p>
+        <p class="homevisit-label">🏠 Home Visit Included</p>
+      </div>
+      <div class="card">
+        <img src="model-thyroid.jpg" alt="Thyroid Profile" />
+        <h3>Thyroid Profile</h3>
+        <p>T3, T4, TSH</p>
+        <p><strong>₹499</strong></p>
+      </div>
+      <div class="card">
+        <img src="model-diabetes.jpg" alt="Diabetes Panel" />
+        <h3>Diabetes Panel</h3>
+        <p>FBS, PPBS, HbA1c</p>
+        <p><strong>₹599</strong></p>
+        <p class="homevisit-label">🏠 Home Visit Available</p>
+      </div>
+    </div>
+  </section>
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: report@healthifylab.com<br/>Phone: 9503832889</p>
+    <p>
+      <a href="https://x.com/healthify_lab">Twitter</a> |
+      <a href="https://instagram.com/healthifylab">Instagram</a> |
+      <a href="https://facebook.com/healthify">Facebook</a>
+    </p>
+  </footer>
+  <a href="https://wa.me/919503832889" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+    <img src="whatsapp.png" alt="WhatsApp Chat" width="60" height="60" />
+  </a>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
