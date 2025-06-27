@@ -22,10 +22,24 @@ document.getElementById("bookBtn").onclick = () => {
 
 document.getElementById("bookingForm").addEventListener("submit", async function (e) {
   e.preventDefault();
-  const data = {};
-  document.querySelectorAll("#bookingForm input, select, textarea").forEach(el => {
-    data[el.placeholder?.toLowerCase().replace(/ /g, "_") || el.name || el.id] = el.value;
-  });
+  const data = {
+  full_name: document.querySelector('input[placeholder="Full Name"]').value.trim(),
+  age: document.querySelector('input[placeholder="Age"]').value.trim(),
+  sex: document.querySelector('select').value.trim(),
+  mobile_number: document.querySelector('input[placeholder="Mobile Number"]').value.trim(),
+  full_address: document.querySelector('textarea[placeholder="Full Address"]').value.trim(),
+  pincode: document.querySelector('input[placeholder="Pincode"]').value.trim(),
+  category: document.getElementById("categorySelect").value.trim(),
+  test_or_profile: document.getElementById("testSelect").value.trim(),
+  appointment_date: document.querySelector('input[type="date"]').value.trim(),
+  appointment_time: document.querySelector('input[type="time"]').value.trim()
+};
+
+if (Object.values(data).some(v => v === "")) {
+  alert("❗Please fill all fields before submitting.");
+  return;
+}
+
 
   try {
     const docRef = await addDoc(collection(db, "bookings"), data);
