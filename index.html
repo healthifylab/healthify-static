@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Healthify – Book Lab Tests</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="manifest" href="manifest.json" />
 </head>
 <body>
   <nav class="navbar">
-    <div class="nav-left">Healthify</div>
+    <div class="nav-left">
+      <img src="logo.png" alt="Healthify Logo" height="40"/>
+    </div>
     <div class="nav-right">
       <a href="#home">Home</a>
       <a href="#profiles">Profiles</a>
@@ -35,17 +36,17 @@
   <section id="profiles">
     <h2>Health Packages</h2>
     <div class="cards">
-      <div class="card" onclick="openProfile(0)">
+      <div class="card" onclick="alert('Full Body Checkup includes CBC, LFT, KFT...')">
         <h3>Full Body Checkup</h3>
         <p>Includes CBC, LFT, KFT, Sugar, ECG</p>
         <p><strong>₹999</strong></p>
       </div>
-      <div class="card" onclick="openProfile(1)">
+      <div class="card" onclick="alert('Thyroid Profile includes T3, T4, TSH')">
         <h3>Thyroid Profile</h3>
         <p>T3, T4, TSH</p>
         <p><strong>₹499</strong></p>
       </div>
-      <div class="card" onclick="openProfile(2)">
+      <div class="card" onclick="alert('Diabetes Panel includes FBS, PPBS, HbA1c')">
         <h3>Diabetes Panel</h3>
         <p>FBS, PPBS, HbA1c</p>
         <p><strong>₹599</strong></p>
