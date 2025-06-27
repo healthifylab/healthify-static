@@ -1,1 +1,54 @@
-<!DOCTYPE html><html><head><title>Healthify</title><link rel='stylesheet' href='style.css'></head><body><nav>Healthify</nav><main><h1>Book Tests</h1><button id='bookBtn'>Book Now</button><div id='booking'><form id='bookingForm'><input placeholder='Full Name'><input type='date'><select id='testSelect' multiple><option>CBC</option><option>LFT</option></select><button type='submit'>Submit</button></form></div></main><script type='module' src='script.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthify – Book Tests</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">Healthify</div>
+    <div class="nav-right">
+      <a href="#home">Home</a>
+      <a href="#contact">Contact</a>
+      <button id="bookBtn">Book Now</button>
+    </div>
+  </nav>
+
+  <section id="home" class="banner">
+    <h1>Book Lab Tests from Home</h1>
+    <p>Trusted testing at your doorstep</p>
+  </section>
+
+  <section id="booking" style="display:none;">
+    <form id="bookingForm">
+      <input type="text" placeholder="Full Name" required />
+      <input type="number" placeholder="Age" required />
+      <select required>
+        <option value="">Sex</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+      <input type="tel" placeholder="Mobile Number" required />
+      <textarea placeholder="Full Address" required></textarea>
+      <input type="text" placeholder="Pincode" required />
+      <select id="categorySelect" onchange="updateOptions()" required>
+        <option value="">Select Category</option>
+        <option value="test">Test</option>
+        <option value="profile">Profile</option>
+      </select>
+      <select id="testSelect" multiple required></select>
+      <input type="date" required />
+      <input type="time" required />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer id="contact">
+    <p>Email: report@healthifylab.com<br>Phone: 9503832889</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
