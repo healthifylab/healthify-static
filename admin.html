@@ -1,1 +1,34 @@
-<!DOCTYPE html><html><head><title>Admin</title><link rel='stylesheet' href='style.css'></head><body><h2>Login</h2><input id='email'><input id='password' type='password'><button onclick='login()'>Login</button><div id='dashboard' style='display:none;'><h3>Bookings</h3><table id='bookingsTable'><thead><tr><th>Name</th><th>Status</th><th>Action</th></tr></thead><tbody></tbody></table></div><script type='module' src='admin.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Healthify Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section style="max-width: 600px; margin: auto;">
+    <h2>Admin Login</h2>
+    <input id="adminEmail" placeholder="Email" type="email" />
+    <input id="adminPass" placeholder="Password" type="password" />
+    <button onclick="loginAdmin()">Login</button>
+  </section>
+
+  <section id="adminDashboard" style="display:none; max-width: 1000px; margin: auto;">
+    <h2>Booking Dashboard</h2>
+    <table border="1" width="100%" cellpadding="8" style="background:white;">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Mobile</th>
+          <th>Tests</th>
+          <th>Time</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="bookingTable"></tbody>
+    </table>
+  </section>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
