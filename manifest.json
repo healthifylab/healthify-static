@@ -1,1 +1,15 @@
-{ "name": "Healthify", "short_name": "Healthify", "start_url": ".", "display": "standalone" }
+{
+  "name": "Healthify",
+  "short_name": "Healthify",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#004aad",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}
