@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Healthify – Book Lab Tests</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
 </head>
 <body>
   <nav class="navbar">
@@ -25,6 +26,7 @@
     <p>Trusted, Fast & Affordable Testing in Mumbai, Thane & Navi Mumbai</p>
   </section>
 
+  <!-- Promotional Popup -->
   <div class="popup" id="offerPopup">
     <div class="popup-content">
       <strong>🎉 20% OFF + Free ECG</strong><br/>
@@ -37,16 +39,19 @@
     <h2>Health Packages</h2>
     <div class="cards">
       <div class="card" onclick="alert('Full Body Checkup includes CBC, LFT, KFT...')">
+        <img src="full-body.jpg" alt="Full Body" />
         <h3>Full Body Checkup</h3>
         <p>Includes CBC, LFT, KFT, Sugar, ECG</p>
         <p><strong>₹999</strong></p>
       </div>
       <div class="card" onclick="alert('Thyroid Profile includes T3, T4, TSH')">
+        <img src="thyroid.jpg" alt="Thyroid Profile" />
         <h3>Thyroid Profile</h3>
         <p>T3, T4, TSH</p>
         <p><strong>₹499</strong></p>
       </div>
       <div class="card" onclick="alert('Diabetes Panel includes FBS, PPBS, HbA1c')">
+        <img src="diabetes.jpg" alt="Diabetes Panel" />
         <h3>Diabetes Panel</h3>
         <p>FBS, PPBS, HbA1c</p>
         <p><strong>₹599</strong></p>
@@ -89,6 +94,11 @@
       <a href="https://facebook.com/healthify">Facebook</a>
     </p>
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919503832889" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+    <img src="whatsapp.png" alt="WhatsApp Chat" width="60" height="60" />
+  </a>
 
   <script type="module" src="script.js"></script>
 </body>
