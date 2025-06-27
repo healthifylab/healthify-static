@@ -26,12 +26,20 @@
     <p>Trusted, Fast & Affordable Testing in Mumbai, Thane & Navi Mumbai</p>
   </section>
 
-  <!-- Promotional Popup -->
-  <div class="popup" id="offerPopup">
+  <!-- 🎉 Promotional Popup Below Hero -->
+  <div class="popup" style="position: relative; margin: 20px auto; max-width: 50%; text-align: center;">
     <div class="popup-content">
       <strong>🎉 20% OFF + Free ECG</strong><br/>
-      On Full Body Checkup. Limited Time Offer!
-      <button onclick="this.parentElement.style.display='none'">×</button>
+      On Full Body Checkup. Home Sample Collection Included!
+      <button onclick="this.parentElement.parentElement.style.display='none'">×</button>
+    </div>
+  </div>
+
+  <!-- 🏠 Secondary Home Visit Popup -->
+  <div class="popup" style="position: relative; margin: 10px auto; max-width: 40%; background: #e0ffe0; text-align: center;">
+    <div class="popup-content">
+      🏠 Home Visit Available Across Mumbai-Thane-Navi Mumbai!
+      <button onclick="this.parentElement.parentElement.style.display='none'">×</button>
     </div>
   </div>
 
@@ -39,22 +47,24 @@
     <h2>Health Packages</h2>
     <div class="cards">
       <div class="card" onclick="alert('Full Body Checkup includes CBC, LFT, KFT...')">
-        <img src="full-body.jpg" alt="Full Body" />
+        <img src="model-full-body.jpg" alt="Full Body" />
         <h3>Full Body Checkup</h3>
         <p>Includes CBC, LFT, KFT, Sugar, ECG</p>
         <p><strong>₹999</strong></p>
+        <p class="homevisit-label">🏠 Home Visit Included</p>
       </div>
       <div class="card" onclick="alert('Thyroid Profile includes T3, T4, TSH')">
-        <img src="thyroid.jpg" alt="Thyroid Profile" />
+        <img src="model-thyroid.jpg" alt="Thyroid Profile" />
         <h3>Thyroid Profile</h3>
         <p>T3, T4, TSH</p>
         <p><strong>₹499</strong></p>
       </div>
       <div class="card" onclick="alert('Diabetes Panel includes FBS, PPBS, HbA1c')">
-        <img src="diabetes.jpg" alt="Diabetes Panel" />
+        <img src="model-diabetes.jpg" alt="Diabetes Panel" />
         <h3>Diabetes Panel</h3>
         <p>FBS, PPBS, HbA1c</p>
         <p><strong>₹599</strong></p>
+        <p class="homevisit-label">🏠 Home Visit Available</p>
       </div>
     </div>
   </section>
@@ -95,7 +105,7 @@
     </p>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
+  <!-- 💬 Floating WhatsApp Button -->
   <a href="https://wa.me/919503832889" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
     <img src="whatsapp.png" alt="WhatsApp Chat" width="60" height="60" />
   </a>
