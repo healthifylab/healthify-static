@@ -26,15 +26,16 @@ document.getElementById("bookingForm").addEventListener("submit", async function
   document.querySelectorAll("#bookingForm input, select, textarea").forEach(el => {
     data[el.placeholder?.toLowerCase().replace(/ /g, "_") || el.name || el.id] = el.value;
   });
+
   try {
-    await addDoc(collection(db, "bookings"), data);
-    alert("✅ Booking submitted!");
+    const docRef = await addDoc(collection(db, "bookings"), data);
+    alert("✅ Booking submitted!\nRef ID: " + docRef.id);
     this.reset();
   } catch (err) {
-    alert("❌ Error saving booking");
-    console.error(err);
+    alert("❌ Error saving booking:\n" + err.message); // This shows exact error on mobile
   }
 });
+
 
 const profiles = [
   {
